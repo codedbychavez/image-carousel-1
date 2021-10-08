@@ -1,0 +1,74 @@
+.image-1::before, .image-2::before, .image-3::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.30);
+}
+
+.carousel-inner .image-1 {
+    height: 50rem;
+    background-image: url('images/tv-1.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-inner .image-2 {
+    height: 50rem;
+    background-image: url('images/tv-2.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-inner .image-3 {
+    height: 50rem;
+    background-image: url('images/tv-3.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Customized */
+
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .carousel-sub-wrapper {
+    background-color: rgba(255,255,255,0.30);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 10rem;
+}
+
+i.bi {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    i.bi {
+        font-size: 1.5rem;
+    }
+
+    .image-1, .image-2, .image-3 {
+        background-size: contain;
+        height: 20rem !important;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    .carousel-indicators .carousel-sub-wrapper {
+        width: 5rem;
+    }
+  }
+
